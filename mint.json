@@ -1,55 +1,49 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Autocalls",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/logo/dark.png",
+    "light": "/logo/light.png"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.png",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#06df4b",
+    "light": "#06df4b",
+    "dark": "#65fe50",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#01df4a",
+      "to": "#65fe50"
     }
   },
-  "topbarLinks": [
-    {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
-    }
-  ],
+  "topbarLinks": [{
+    "name": "Support",
+    "url": "https://autocalls.ai/en/contact"
+  }],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://app.autocalls.ai"
   },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
-  "anchors": [
-    {
-      "name": "Documentation",
+  "tabs": [{
+    "name": "API Reference",
+    "url": "api-reference"
+  }],
+  "anchors": [{
+      "name": "Request a feature",
       "icon": "book-open-cover",
       "url": "https://mintlify.com/docs"
     },
     {
-      "name": "Community",
-      "icon": "slack",
+      "name": "Discord",
+      "icon": "discord",
       "url": "https://mintlify.com/community"
     },
     {
-      "name": "Blog",
+      "name": "Get support",
       "icon": "newspaper",
       "url": "https://mintlify.com/blog"
     }
   ],
-  "navigation": [
-    {
+  "navigation": [{
       "group": "Get Started",
       "pages": [
         "introduction",
@@ -84,8 +78,6 @@
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "linkedin": "https://www.linkedin.com/company/autocalls-ai"
   }
 }
