@@ -23,60 +23,17 @@
     "name": "Dashboard",
     "url": "https://app.autocalls.ai"
   },
-  "tabs": [{
-    "name": "API Reference",
-    "url": "api-reference"
-  }],
   "anchors": [{
-      "name": "Request a feature",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "name": "Discord",
-      "icon": "discord",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Get support",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
-    }
-  ],
+    "name": "Request a feature",
+    "icon": "book-open-cover",
+    "url": "https://autocalls.featurebase.app/"
+  }],
   "navigation": [{
-      "group": "Get Started",
-      "pages": [
-        "introduction",
-        "quickstart",
-        "development"
-      ]
-    },
-    {
-      "group": "Essentials",
-      "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
-      ]
-    },
-    {
-      "group": "API Documentation",
-      "pages": [
-        "api-reference/introduction"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
-      ]
-    }
-  ],
+    "group": "Get Started",
+    "pages": [
+      "introduction"
+    ]
+  }],
   "footerSocials": {
     "linkedin": "https://www.linkedin.com/company/autocalls-ai"
   }
