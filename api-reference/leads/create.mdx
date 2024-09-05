@@ -1,0 +1,70 @@
+---
+title: "Create lead"
+api: "POST /user/lead"
+description: "Create a new lead in the Autocalls system"
+---
+
+This endpoint allows you to create a new lead in the Autocalls system.
+
+### Request body
+
+<ParamField body="phone_number" type="string" required>
+  The phone number of the lead in E.164 format (e.g. +1234567890)
+</ParamField>
+
+<ParamField body="campaign_id" type="integer" required>
+  The ID of the campaign to create the lead for
+</ParamField>
+
+<ParamField body="variables" type="array">
+  The variables to pass to the lead
+</ParamField>
+
+<ParamField body="allow_dupplicate" type="boolean">
+  Whether to allow duplicate leads in a campaign.
+</ParamField>
+
+### Response fields
+
+<ResponseField name="message" type="string">
+  The message of the response
+</ResponseField>
+
+<ResponseField name="data" type="object">
+  The data of the response
+</ResponseField>
+
+<ResponseField name="data.id" type="string">
+  The id of the lead
+</ResponseField>
+
+<RequestExample>
+
+```json Request
+{
+  "phone_number": "+1234567890",
+  "campaign_id": 1,
+  "variables": [
+    {
+      "customer_name": "John Doe",
+      "email": "john.doe@example.com"
+    }
+  ],
+  "allow_dupplicate": false
+}
+```
+
+</RequestExample>
+
+<ResponseExample>
+
+```json 200 Response
+{
+  "message": "Lead created successfully",
+  "data": {
+    "id": "1234569"
+  }
+}
+```
+
+</ResponseExample>

@@ -28,13 +28,49 @@
     "icon": "book-open-cover",
     "url": "https://autocalls.featurebase.app/"
   }],
-  "navigation": [{
-    "group": "Get Started",
-    "pages": [
-      "introduction"
-    ]
+  "tabs": [{
+    "name": "API Reference",
+    "url": "api-reference"
   }],
+  "navigation": [{
+      "group": "Documentation",
+      "pages": [
+        "introduction",
+        {
+          "group": "Call types",
+          "pages": [
+            "call-types/inbound",
+            "call-types/outbound"
+          ]
+        },
+        "costs",
+        {
+          "group": "Tools",
+          "pages": [
+            "tools/end-call",
+            "tools/transfer-call",
+            "tools/cal-com"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "API Reference",
+      "pages": [
+        "api-reference/introduction",
+        "api-reference/authentication",
+        "api-reference/leads/create",
+        "api-reference/campaigns/index"
+      ]
+    }
+  ],
   "footerSocials": {
     "linkedin": "https://www.linkedin.com/company/autocalls-ai"
+  },
+  "api": {
+    "baseUrl": "https://app.autocalls.ai/api/",
+    "auth": {
+      "method": "bearer"
+    }
   }
 }
