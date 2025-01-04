@@ -23,6 +23,9 @@
     "items": "card"
   },
   "topbarLinks": [{
+    "name": "Home",
+    "url": "https://autocalls.ai"
+  }, {
     "name": "Support",
     "url": "https://autocalls.ai/contact"
   }],
@@ -33,14 +36,17 @@
   "anchors": [{
     "name": "No-Code Automation",
     "icon": "wand-magic-sparkles",
+    "color": "#6c63ff",
     "url": "automation-platform"
   }, {
     "name": "White Label",
     "icon": "tag",
+    "color": "#ff0142",
     "url": "white-label"
   }, {
     "name": "API Reference",
     "icon": "code",
+    "color": "#1c51fc",
     "url": "api-reference"
   }],
   "navigation": [{
