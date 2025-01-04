@@ -1,0 +1,65 @@
+---
+title: "Cal.com Appointment Scheduling"
+icon: "calendar-days"
+description: "Learn how to enable your AI assistant to schedule appointments using Cal.com integration"
+---
+
+Enable your AI assistant to seamlessly schedule meetings and appointments using Cal.com integration. This powerful feature allows your AI to check availability and book meetings directly during calls.
+
+## Prerequisites
+
+Before setting up Cal.com integration, you'll need:
+
+- A Cal.com account (either hosted or self-hosted)
+- An event type configured in Cal.com
+- An API key from Cal.com
+
+## Setup Process
+
+### 1. Cal.com Configuration
+
+1. Sign up or log in to your [Cal.com](https://cal.com/) account
+2. Create a new event type specifically for AI assistant bookings
+   - Give it a clear name like "Meeting with AI Assistant"
+   - Configure duration, availability, and other settings
+3. Once created, note down the event ID from the URL
+   <img height="200" src="/resources/cal-event-id.png" />
+4. Generate an API key:
+   - Go to Cal.com settings
+   - Navigate to Developer Settings
+   - Create a new API key
+   - Copy and securely store the API key
+
+### 2. Adding Cal.com to Your Assistant
+
+1. In your AI assistant settings, locate the Tools section
+2. Add the Cal.com integration
+3. Configure the tool with:
+   - Your Cal.com API key
+   - The event type ID
+     <img height="200" src="/resources/cal-tool.png" />
+
+## Best Practices
+
+- Create dedicated event types for AI bookings to track their usage
+- Set clear buffer times between meetings
+- Configure appropriate meeting durations
+- Use descriptive event names that make sense to your customers
+
+## Testing
+
+After setup, we recommend:
+
+1. Making a test call to your AI assistant
+2. Requesting to schedule a meeting
+3. Verifying the booking appears in your Cal.com dashboard
+4. Checking the confirmation emails are received
+
+## Troubleshooting
+
+If you encounter issues:
+
+- Verify your API key is active and has the correct permissions
+- Ensure the event type ID is correct
+- Check that your Cal.com availability is properly configured
+- Confirm your timezone settings are correct

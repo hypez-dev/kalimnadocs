@@ -1,0 +1,36 @@
+---
+title: "Tools & Functions"
+icon: "screwdriver-wrench"
+description: "Explore the built-in tools and functions that enhance your AI assistant's capabilities during calls"
+---
+
+Autocalls.ai offers built-in "tools" that your AI assistant can use during a call. These help you shape the conversation flow and automate actions like transferring calls or scheduling appointments.
+
+## 1. End Call Tool
+
+- **Purpose**: Tells the AI to politely wrap up the conversation.
+- **How It Works**: You can specify in the system prompt or logic, for instance: "If the user says `goodbye`, end the call."
+- **Configuration**: In the assistant's settings, you can define any conditions that should trigger the end call.
+
+## 2. Transfer Tool
+
+- **Purpose**: Moves the caller from the AI assistant to a human agent or external phone number.
+- **Use Cases**: Warm leads on a sales call, escalations on a support call, etc.
+- **Settings**: In the assistant's config, add the phone number or department the call should go to, and optionally a short hold message.
+
+## 3. Appointment Scheduler
+
+- **Purpose**: Lets the AI check your calendar availability (e.g. via Cal.com or Google Calendar) and book an appointment.
+- **Typical Flow**:
+  1. AI offers scheduling.
+  2. Caller selects date/time.
+  3. AI confirms and sends a confirmation (using email or SMS if configured).
+
+## 4. No-Code Automation Platform
+
+- **Purpose**: After or during calls, the AI can trigger actions in the automation platform (like updating a CRM, sending an email, or logging results in Google Sheets).
+- **Setup**: Link your assistant with the "Automation" tab, choose triggers ("Call Ended," "Customer Agrees," etc.), and pick the action (send a Slack notification or add a row in Sheets).
+
+---
+
+**Note:** Tools can be combined. For instance, the AI can schedule an appointment, then if the caller wants more info, it can transfer them to a human agent.

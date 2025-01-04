@@ -2,8 +2,8 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Autocalls",
   "logo": {
-    "dark": "/logo/dark.png",
-    "light": "/logo/light.png"
+    "dark": "/resources/logo/dark.png",
+    "light": "/resources/logo/light.png"
   },
   "favicon": "/favicon.png",
   "colors": {
@@ -15,6 +15,13 @@
       "to": "#65fe50"
     }
   },
+  "topAnchor": {
+    "name": "Platform Guide",
+    "icon": "book"
+  },
+  "sidebar": {
+    "items": "card"
+  },
   "topbarLinks": [{
     "name": "Support",
     "url": "https://autocalls.ai/contact"
@@ -24,34 +31,124 @@
     "url": "https://app.autocalls.ai"
   },
   "anchors": [{
-    "name": "Request a feature",
-    "icon": "book-open-cover",
-    "url": "https://autocalls.featurebase.app/"
-  }],
-  "tabs": [{
+    "name": "No-Code Automation",
+    "icon": "wand-magic-sparkles",
+    "url": "automation-platform"
+  }, {
+    "name": "White Label",
+    "icon": "tag",
+    "url": "white-label"
+  }, {
     "name": "API Reference",
+    "icon": "code",
     "url": "api-reference"
   }],
   "navigation": [{
-      "group": "Documentation",
+      "group": "Introduction",
       "pages": [
-        "introduction",
-        {
-          "group": "Call types",
-          "pages": [
-            "call-types/inbound",
-            "call-types/outbound"
-          ]
-        },
-        "costs",
-        {
-          "group": "Tools",
-          "pages": [
-            "tools/end-call",
-            "tools/transfer-call",
-            "tools/cal-com"
-          ]
-        }
+        "introduction/what-is-autocalls",
+        "introduction/how-it-works",
+        "introduction/key-terminology"
+      ]
+    },
+    {
+      "group": "Getting Started",
+      "pages": [
+        "getting-started/core-concepts",
+        "getting-started/understanding-billing"
+      ]
+    },
+    {
+      "group": "AI Assistants Overview",
+      "pages": [
+        "ai-assistants/what-is-ai-assistant",
+        "ai-assistants/system-prompt",
+        "ai-assistants/initial-message",
+        "ai-assistants/creating-and-editing",
+        "ai-assistants/tools-and-functions",
+        "ai-assistants/voice-selection",
+        "ai-assistants/filler-audio",
+        "ai-assistants/cal-com-scheduling",
+        "ai-assistants/testing"
+      ]
+    },
+    {
+      "group": "Phone Numbers",
+      "pages": [
+        "phone-numbers/types",
+        "phone-numbers/purchasing-and-managing",
+        "phone-numbers/pricing-and-regions",
+        "phone-numbers/sms-capabilities",
+        "phone-numbers/assigning-to-assistants"
+      ]
+    },
+    {
+      "group": "Inbound Calls",
+      "pages": [
+        "inbound-calls/overview",
+        "inbound-calls/provisioning",
+        "inbound-calls/configuring",
+        "inbound-calls/insights"
+      ]
+    },
+    {
+      "group": "Outbound Calls",
+      "pages": [
+        "outbound-calls/overview",
+        "outbound-calls/campaigns",
+        "outbound-calls/caller-id",
+        "outbound-calls/voicemail-handling",
+        "outbound-calls/scripts-and-prompts",
+        "outbound-calls/mass-dialing"
+      ]
+    },
+    {
+      "group": "AI Prompting & Conversation Design",
+      "pages": [
+        "conversation-design/prompt-basics",
+        "conversation-design/knowledge-bases",
+        "conversation-design/interruptions",
+        "conversation-design/language-support"
+      ]
+    },
+    {
+      "group": "Automation & Integrations",
+      "pages": [
+        "automation/overview",
+        "automation/webhook-api",
+        "provisioning/phone-system-integrations"
+      ]
+    },
+    {
+      "group": "Costs & Pricing",
+      "pages": [
+        "pricing/overview",
+        "pricing/usage-based",
+        "pricing/number-rentals"
+      ]
+    },
+    {
+      "group": "Number Provisioning",
+      "pages": [
+        "provisioning/supported-countries",
+        "provisioning/managing-numbers"
+      ]
+    },
+    {
+      "group": "White Label Program",
+      "pages": [
+        "white-label/overview",
+        "white-label/onboarding",
+        "white-label/plans-setup"
+      ]
+    },
+    {
+      "group": "Troubleshooting & FAQs",
+      "pages": [
+        "troubleshooting/voice-problems",
+        "troubleshooting/billing",
+        "troubleshooting/call-quality",
+        "troubleshooting/ai-behavior"
       ]
     },
     {
@@ -61,6 +158,34 @@
         "api-reference/authentication",
         "api-reference/leads/create",
         "api-reference/campaigns/index"
+      ]
+    },
+    {
+      "group": "No-Code Automation platform",
+      "pages": [
+        "automation-platform/introduction",
+        "automation-platform/building-flows",
+        "automation-platform/passing-data",
+        "automation-platform/publishing-flows",
+        "automation-platform/debugging-runs",
+        "automation-platform/versioning",
+        "automation-platform/known-limits"
+      ]
+    },
+    {
+      "group": "Calls Related",
+      "pages": [
+        "automation-platform/calls-related/autocalls-tool",
+        "automation-platform/calls-related/common-integrations",
+        "automation-platform/calls-related/sms-capabilities"
+      ]
+    },
+    {
+      "group": "Tutorials",
+      "pages": [
+        "automation-platform/tutorials/outbound-form-call",
+        "automation-platform/tutorials/inbound-context-injection"
+
       ]
     }
   ],
