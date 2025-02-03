@@ -6,6 +6,12 @@ description: "Learn how to enable your AI assistant to schedule appointments usi
 
 Enable your AI assistant to seamlessly schedule meetings and appointments using Cal.com integration. This powerful feature allows your AI to check availability and book meetings directly during calls.
 
+<Warning>
+  Do not make any new fields required in your Cal.com event settings. The
+  integration only supports default fields and the optional phone field. Adding
+  required custom fields will cause the integration to fail.
+</Warning>
+
 ## Prerequisites
 
 Before setting up Cal.com integration, you'll need:
@@ -30,7 +36,30 @@ Before setting up Cal.com integration, you'll need:
    - Create a new API key
    - Copy and securely store the API key
 
-### 2. Adding Cal.com to Your Assistant
+### 2. Customer Contact Information
+
+#### Email Configuration
+
+To send calendar invites to customers:
+
+1. Define `email` in your assistant's input variables
+2. Pass the customer's email as the `email` variable when creating the lead
+3. The system will automatically use this email for calendar invitations
+
+#### Phone Number in Calendar Events
+
+To include the caller's phone number in calendar events:
+
+1. Go to your event settings in Cal.com
+2. Click on "Add a question"
+   <img height="200" src="/resources/cal-event-settings.jpeg" />
+3. Configure the field with these exact values:
+   - Identifier: `phone` (this must be exact)
+     <img height="200" src="/resources/cal-phone-field.jpeg" />
+4. Save your changes
+   <img height="200" src="/resources/cal-save.jpeg" />
+
+### 3. Adding Cal.com to Your Assistant
 
 1. In your AI assistant settings, locate the Tools section
 2. Add the Cal.com integration
@@ -45,6 +74,8 @@ Before setting up Cal.com integration, you'll need:
 - Set clear buffer times between meetings
 - Configure appropriate meeting durations
 - Use descriptive event names that make sense to your customers
+- Keep only default fields and the phone field optional
+- Always include customer email in lead creation for calendar invites
 
 ## Testing
 
@@ -53,7 +84,9 @@ After setup, we recommend:
 1. Making a test call to your AI assistant
 2. Requesting to schedule a meeting
 3. Verifying the booking appears in your Cal.com dashboard
-4. Checking the confirmation emails are received
+4. Checking that the phone number appears in the calendar event
+5. Verifying the customer receives the calendar invitation email
+6. Checking the confirmation emails are received
 
 ## Troubleshooting
 
@@ -62,4 +95,8 @@ If you encounter issues:
 - Verify your API key is active and has the correct permissions
 - Ensure the event type ID is correct
 - Check that your Cal.com availability is properly configured
+- Confirm no required custom fields are added
+- Verify the phone field identifier is exactly "phone"
+- Confirm the `email` variable is properly set in assistant settings
+- Check that customer email is being passed correctly in leads
 - Confirm your timezone settings are correct
