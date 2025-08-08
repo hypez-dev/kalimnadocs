@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Autocalls",
+  "name": "Kalimna",
   "logo": {
     "dark": "/resources/logo/dark.png",
     "light": "/resources/logo/light.png"
@@ -24,25 +24,20 @@
   },
   "topbarLinks": [{
     "name": "Home",
-    "url": "https://autocalls.ai"
+    "url": "https://kalimna.ai"
   }, {
     "name": "Support",
-    "url": "https://autocalls.ai/contact"
+    "url": "https://kalimna.ai/contact"
   }],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://app.autocalls.ai"
+    "url": "https://app.kalimna.ai"
   },
   "anchors": [{
     "name": "No-Code Automation",
     "icon": "wand-magic-sparkles",
     "color": "#6c63ff",
     "url": "automation-platform"
-  }, {
-    "name": "White Label",
-    "icon": "tag",
-    "color": "#ff0142",
-    "url": "white-label"
   }, {
     "name": "API Reference",
     "icon": "code",
@@ -196,10 +191,10 @@
     }
   ],
   "footerSocials": {
-    "linkedin": "https://www.linkedin.com/company/autocalls-ai"
+    "linkedin": "https://www.linkedin.com/company/kalimna"
   },
   "api": {
-    "baseUrl": "https://app.autocalls.ai/api/",
+    "baseUrl": "https://app.kalimna.ai/api/",
     "auth": {
       "method": "bearer"
     }
