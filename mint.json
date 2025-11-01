@@ -5,7 +5,7 @@
     "dark": "/resources/logo/dark.png",
     "light": "/resources/logo/light.png"
   },
-  "favicon": "/favicon.png",
+  "favicon": "https://kalimna.ai/images/favicon.png",
   "colors": {
     "primary": "#06df4b",
     "light": "#06df4b",
