@@ -12,14 +12,6 @@ Steps are connected vertically. Data flows from parent steps to the children. Ch
 
 ## Example Steps
 
-<video
-  width="450"
-  autoPlay
-  muted
-  loop
-  playsinline
-  src="/resources/passing-data-3steps.mp4"></video>
-
 This flow has 3 steps, they can access data as follows:
 
 - **Step 1** is the main data producer to be used in the next steps. Data produced by Step 1 will be accessible in Steps 2 and 3. Some triggers don't produce data though, like Schedules.
@@ -32,12 +24,6 @@ This flow has 3 steps, they can access data as follows:
 
 In order to use data from a previous step in your current step, place your cursor in any input, the **Data to Insert** panel will pop up.
 
-<video
-  autoPlay
-  muted
-  loop
-  playsinline
-  src="/resources/passing-data-data-to-insert-panel.mp4"></video>
 
 This panel shows the accessible steps and their data. You can expand the data items to view their content, and you can click the items to insert them in your current settings input.
 
@@ -45,12 +31,6 @@ If an item in this panel has a caret (⌄) to the right, it means you can click 
 
 When you insert data from this panel, it gets inserted at the cursor's position in the input. This means you can combine static text and dynamic data in any field.
 
-<video
-  autoPlay
-  muted
-  loop
-  playsinline
-  src="/resources/passing-data-main-insert-data-example.mp4"></video>
 
 We generally recommend that you expand the items before inserting them to understand the type of data they contain and whether they're the right fit to the input you're filling.
 
@@ -60,11 +40,6 @@ We require you to test steps before accessing their data. This approach protects
 
 If a step is not tested and you try to access its data, you will see the following message:
 
-<img
-  width="350"
-  src="/resources/passing-data-test-step-first.png"
-  alt="Test your automation step first"
-/>
 
 To fix this, go to the step and use the Generate Sample Data panel to test it. Steps use different approaches for testing. These are the common ones:
 
@@ -77,25 +52,11 @@ Follow the instructions in the Generate Sample Data panel to know how your step 
 
 This is an example for generating sample data for a trigger using the **Load Data** button:
 
-<video
-  autoPlay
-  muted
-  loop
-  playsinline
-  src="/resources/passing-data-load-data.mp4"></video>
-
 ## Advanced Tips
 
 ### Switching to Dynamic Values
 
 Dropdowns and some other input types don't let you select data from previous steps. If you'd like to bypass this and use data from previous steps instead, switch the input into a dynamic one using this button:
-
-<video
-  autoPlay
-  muted
-  loop
-  playsinline
-  src="/resources/passing-data-dynamic-value.mp4"></video>
 
 ### Accessing data by path
 
